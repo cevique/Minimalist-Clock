@@ -1,0 +1,42 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color-scheme: light dark;
+}
+body {
+  font-family: "Orbitron", sans-serif;
+  color: light-dark(#333b3c, #efefec);
+  background-color: light-dark(#efedea, #000000);
+}
+h1 {
+  font-size: 44px;
+  text-align: center;
+  margin: 32px;
+  text-decoration: underline;
+}
+#dayDate {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: underline;
+}
+#time {
+  font-size: 92px;
+  margin: 48px;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+#design {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bisque-bg {
+  color: #333b3c;
+  background-color: bisque;
+  padding: 16px;
+  border: 1px solid bisque;
+  border-radius: 32px;
+}

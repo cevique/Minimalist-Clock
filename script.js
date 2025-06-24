@@ -1,0 +1,21 @@
+const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+setInterval(() => {
+  let clock = new Date();
+  let day = clock.getDay();
+  day = days[day]
+  let date = clock.getDate();
+  date = (date>9)? date: `0${date}`
+  let month = clock.getMonth();
+  month = (month>9)? month: `0${month}`
+  let year = clock.getFullYear();
+  let date_british = `${date}/${month}/${year}`
+  let h = clock.getHours();
+  let m = clock.getMinutes();
+  let s = clock.getSeconds();
+  document.getElementById('day').textContent = day
+  document.getElementById('date').textContent = date_british
+  document.getElementById('time').firstElementChild.textContent = (h>9)? h: `0${h}`
+  document.getElementById('time').children[2].textContent = (m>9)? m: `0${m}`
+  document.getElementById('time').lastElementChild.textContent = (s>9)? s: `0${s}`
+  console.log(h, m, s);
+}, 1000);
