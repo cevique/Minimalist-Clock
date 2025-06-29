@@ -17,5 +17,4 @@ setInterval(() => {
   document.getElementById('time').firstElementChild.textContent = (h>9)? h: `0${h}`
   document.getElementById('time').children[2].textContent = (m>9)? m: `0${m}`
   document.getElementById('time').lastElementChild.textContent = (s>9)? s: `0${s}`
-  console.log(h, m, s);
 }, 1000);
